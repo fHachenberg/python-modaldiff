@@ -1,0 +1,335 @@
+Supported File Formats
+File Format Extensions  Module  Read    Write   SPS Volume
+Accurex II text data    .txt    accurexii-txt   Yes —   —   —
+AIST-NT .aist   aistfile    Yes —   —   —
+Alicona Imaging AL3D data   .al3d   alicona Yes —   —   —
+Ambios AMB  .amb    ambfile Yes —   —   —
+Anfatec .par, .int  anfatec Yes —   —   —
+A.P.E. Research DAX .dax    apedaxfile  Yes —   —   —
+A.P.E. Research APDT    .apdt   apedaxfile  Yes —   —   —
+A.P.E. Research DAT .dat    apefile Yes —   —   —
+Text matrix of data values  .txt    asciiexport —   Yes —   —
+Assing AFM  .afm    assing-afm  Yes Yes —   —
+Attocube Systems ASC    .asc    attocube    Yes —   —   —
+Image Metrology BCR, BCRF   .bcr, .bcrf bcrfile Yes —   —   —
+Burleigh BII    .bii    burleigh_bii    Yes —   —   —
+Burleigh IMG v2.1   .img    burleigh    Yes —   —   —
+Burleigh exported data  .txt, .bin  burleigh_exp    Yes —   —   —
+Code V interferogram data   .int    codevfile   Yes —   —   —
+Createc DAT .dat    createc Yes —   —   —
+Benyuan CSM .csm    csmfile Yes —   —   —
+Digital Micrograph DM3 TEM data .dm3    dm3file Yes —   —   —
+Digital Micrograph DM4 TEM data .dm4    dm3file Yes —   —   —
+DME Rasterscope .img    dmefile Yes —   —   —
+Gwyddion dumb dump data .dump   dumbfile    Yes —   —   —
+ECS .img    ecsfile Yes —   —   —
+Nanosurf EZD, NID   .ezd, .nid  ezdfile Yes —   —   —
+FemtoScan SPM   ,spm.   femtoscan   Yes —   —   —
+FemtoScan text data .txt    femtoscan-txt   Yes[a]  —   —   —
+Flexible Image Transport System (FITS)  .fits, .fit fitsfile    Yes —   —   —
+DME GDEF    .gdf    gdeffile    Yes —   —   —
+Gwyddion Simple Field   .gsf    gsffile Yes Yes —   —
+Gwyddion native data    .gwy    gwyfile Yes Yes Yes Yes
+Gwyddion XYZ data   .gxyzf  gxyzffile   Yes[b]  Yes —   —
+Psi HDF4    .hdf    hdf4file    Yes —   —   —
+Hitachi AFM .afm    hitachi-afm Yes —   —   —
+Hitachi S-3700 and S-4800 SEM data  .txt, +, image  hitachi-sem Yes —   —   —
+WaveMetrics IGOR binary wave v5 .ibw    igorfile    Yes —   —   —
+Intematix SDF   .sdf    intematix   Yes —   —   —
+ISO 28600:2011 SPM data transfer format .spm    iso28600    Yes Yes Limited[c]  —
+JEOL    .tif    jeol    Yes —   —   —
+JPK Instruments .jpk, .jpk-qi-image jpkscan Yes —   —   —
+JEOL JSPM   .tif    jspmfile    Yes —   —   —
+Keyence profilometry VK4    .vk4    keyence Yes —   —   —
+Leica LIF Data File .lif    leica   Yes —   —   Yes
+Olympus LEXT 4000   .lext   lextfile    Yes —   —   —
+FEI Magellan SEM images .tif    magellan    Yes —   —   —
+MapVue  .map    mapvue  Yes —   —   —
+Zygo MetroPro DAT   .dat    metropro    Yes —   —   —
+MicroProf TXT   .txt    microprof   Yes —   —   —
+MicroProf FRT   .frt    microprof   Yes —   —   —
+DME MIF .mif    miffile Yes —   —   —
+Molecular Imaging MI    .mi mifile  Yes —   Limited[c]  —
+Aarhus MUL  .mul    mulfile Yes —   —   —
+Nanoeducator    .mspm, .stm, .spm   nanoeducator    Yes —   Yes —
+Nanomagnetics NMI   .nmi    nanomagnetics   Yes —   —   —
+Nanonics NAN    .nan    nanonics    Yes —   —   —
+Nanonis SXM .sxm    nanonis Yes —   —   —
+NanoObserver    .nao    nanoobserver    Yes —   —   —
+Nanoscan XML    .xml    nanoscan    Yes —   —   —
+NanoScanTech    .nstdat nanoscantech    Yes —   Yes Yes
+Veeco Nanoscope III .001, .002, etc.    nanoscope   Yes —   Limited[c]  Yes
+Veeco Nanoscope II  .001, .002, etc.    nanoscope-ii    Yes —   —   —
+Nanotop SPM .spm    nanotop Yes —   —   —
+GSXM NetCDF .nc netcdf  Yes —   —   —
+Nano Measuring Machine profile data .dsc, .dat  nmmxyz  Yes[b]  —   —   —
+Nearly raw raster data (NRRD)   .nrrd   nrrdfile    Yes[d]  Yes[e]  —   Yes
+NT-MDT  .mdt    nt-mdt  Yes —   Yes Yes
+EM4SYS NX II    .bmp    nxiifile    Yes —   —   —
+NT-MDT old MDA  .sxml, .dat oldmda  —   —   —   Yes
+Olympus LEXT 3000   .ols    ols Yes —   —   —
+Open Microscopy OME TIFF    .ome.tiff, .ome.tif ometiff Yes —   —   —
+Omicron SCALA   .par, .tf*, .tb*, .sf*, .sb*    omicron Yes —   Yes —
+Omicron flat format .*_flat omicronflat Yes —   —   —
+Omicron MATRIX  .mtrx   omicronmatrix   Yes —   —   —
+Wyko OPD    .opd    opdfile Yes —   —   —
+Wyko ASCII  .asc    opdfile Yes —   —   —
+OpenGPS X3P (ISO 5436-2)    .x3p    opengps Yes —   —   —
+Pixmap images   .png, .jpeg, .tiff, .tga, .pnm, .bmp    pixmap  Yes[f]  Yes[g]  —   —
+Nanosurf PLT    .plt    pltfile Yes —   —   —
+Pacific Nanotechnology PNI  .pni    pnifile Yes —   —   —
+Princeton Instruments camera SPE    .spe    princetonspe    No —   —   —
+Park Systems    .tiff, .tif psia    Yes —   —   —
+SymPhoTime TTTR v2.0 data   .pt3    pt3file Yes —   —   —
+Quesant AFM .afm    quesant Yes —   —   —
+Raw text files  any rawfile Yes —   —   —
+Raw binary files    any rawfile Yes —   —   —
+Graph text data (raw)   any rawgraph    Yes[h]  —   —   —
+XYZ data    .xyz, .dat  rawxyz  Yes[b]  Yes —   —
+Renishaw WiRE Data File .wdf    renishaw    Yes —   Yes Yes
+RHK Instruments SM3 .sm3    rhk-sm3 Yes —   Limited[c]  —
+RHK Instruments SM4 .sm4    rhk-sm4 Yes —   Limited[c]  —
+RHK Instruments SM2 .sm2    rhk-spm32   Yes —   Limited[c]  —
+Automation and Robotics Dual Lens Mapper    .mcr, .mct, .mce    robotics    No —   —   —
+S94 STM files   .s94    s94file Yes —   —   —
+Surfstand Surface Data File .sdf    sdfile  Yes Yes —   —
+Micromap SDFA   .sdfa   sdfile  Yes —   —   —
+Seiko SII   .xqb, .xqd, .xqt, .xqp, .xqj, .xqi  seiko   Yes —   —   —
+Sensofar PLu v2000  .plu    sensofar    Yes —   —   —
+Sensofar PLUx data  .plux   sensofarx   Yes —   —   —
+Sensolytics DAT .dat    sensolytics Yes —   —   —
+Shimadzu    .sph, .spp, .001, .002, etc.    shimadzu    Yes —   —   —
+Shimadzu ASCII  .txt    shimadzu    Yes —   —   —
+IonScope SICM   .img    sicmfile    Yes —   —   —
+Surface Imaging Systems .sis    sis Yes —   —   —
+SPIP ASCII  .asc    spip-asc    Yes —   —   —
+Thermicroscopes SPMLab R4-R7    .tfr, .ffr, etc.    spmlab  Yes —   —   —
+Thermicroscopes SPMLab floating point   .flt    spmlabf Yes —   —   —
+SPML (Scanning Probe Microscopy Markup Language)    .xml    spml    Yes —   —   —
+ATC SPMxFormat data .spm    spmxfile    Yes —   —   —
+Omicron STMPRG  tp*, ta*    stmprg  Yes —   —   —
+Molecular Imaging STP   .stp    stpfile Yes —   —   —
+Surf    .sur    surffile    Yes —   —   —
+Tescan MIRA SEM images  .tif    tescan  Yes —   —   —
+FEI Tecnai imaging and analysis (former Emispec) data   .ser    tiaser  Yes —   Yes Yes
+Unisoku .hdr, .dat  unisoku Yes —   —   —
+VTK structured grid file    .vtk    vtkfile —   Yes —   —
+WinSTM data .stm    win_stm Yes —   —   —
+WITec Project data  .wip    wipfile Yes —   Yes Yes
+<tio:diff   ignore_whitespace = "false" >
+<tio:lowercase   >
+WITec ascii EXPORT  .dat    witec-asc   Yes —   —   —
+WITec   .wit         witfile Yes —   —   —
+WSF ASCII data  .wsf    wsffile Yes —   —   —
+Nanotec WSxM    .tom, .STP  wsxmfile    Yes Yes —   —
+</tio:lowercase >
+< /tio:diff >
+Carl Zeiss SEM scans    .tif    zeiss   Yes —   —   —
+Zemax grid sag data .dat    zemax   Yes —   —   —
+OpenEXR images  .exr    hdrimage    Yes Yes —   —
+<tio:skip>
+[a] Regular sampling in both X and Y direction is assumed.
+
+[b] XYZ data are interpolated to a regular grid upon import.
+
+[c] Spectra curves are imported as graphs, positional information is lost.
+</tio:skip>
+[d] Not all variants are implemented.
+
+[e] Data are exported in a fixed attached native-endian float point format.
+
+[f] Import support relies on Gdk-Pixbuf and hence may vary among systems.
+<tio:lclsubst subst="
+'PNG'  => 'Format'
+'TIFF' => 'Format'
+'PNM'  => 'Format'
+'BMP'  => 'Format'
+'JPG'  => 'Format'">
+[g] Usually lossy, intended for presentational purposes. 16bit grayscale export is possible to BMP, JPG and PNM.
+
+[h] At present, only simple two-column data, imported as graph curves, are supported.
+</tio:lclsubst>
+<tio:numdiff expr="
+(skip 2 lines)
+(5 times (word [A-z])(date m/d/y 2012~20y)(time h:m)(real 400~100)(1.8e6~2e5))">
+     Carol         PrintPrice        Cache     Enchanter
+    _________    ________________    ______    __________
+
+    Grothat    02/01/2002 12:18    458.98    1.8202e+06
+    Grenada    01/23/2016 00:49    530.14    2.1204e+05
+    California    02/07/2016 21:15     289.4    1.4294e+05
+    WestEast     04/06/2004 05:44    434.81    3.4037e+05
+    Dilla      03/16/2002 06:18    186.44    2.1275e+05
+
+
+</tio:numdiff>
+<tio:numdiff expr="
+(skip 2 lines)
+    (n times
+        (int>0)(s+)(real 0.69315~0.00001)(s+)(real 0.69315~0.00001)(s+)(6.93147E-01~1E-3)(a+)(693.14718E-03~1E-3))">
+             1    1    2    2    3    3    4    4    5    5    6    6    7    7
+    ....5....0....5....0....5....0....5....0....5....0....5....0....5....0....5
+      1   2.00000    0.69315E+00   0.69315E+000    6.93147E-01  693.14718E-03
+      2   1.80000    0.58779E+00   0.58779E+000    5.87787E-01  587.78661E-03
+      3   1.60000    0.47000E+00   0.47000E+000    4.70004E-01  470.00358E-03
+      4   1.40000    0.33647E+00   0.33647E+000    3.36472E-01  336.47212E-03
+      5   1.20000    0.18232E+00   0.18232E+000    1.82321E-01  182.32140E-03
+      6   1.00000   -0.17881E-06  -0.17881E-006   -1.78814E-07 -178.81395E-09
+      7   0.80000   -0.22314E+00  -0.22314E+000   -2.23144E-01 -223.14376E-03
+      8   0.60000   -0.51083E+00  -0.51083E+000   -5.10826E-01 -510.82587E-03
+      9   0.40000   -0.91629E+00  -0.91629E+000   -9.16291E-01 -916.29112E-03
+     10   0.20000   -0.16094E+01  -0.16094E+001   -1.60944E+00   -1.60944E+00
+</tio:numdiff>
+<tio:numdiff expr="
+(skip 2 lines)
+    (n times
+        (int>0)(s+)(real 0.69315~0.00001)(s+)(real 0.69315~0.00001)(s+)(6.93147E-01~1E-3)(a+)(693.14718E-03~1E-3))" skip_emptylines="true" skip_emptylines="false">
+             1    1    2    2    3    3    4    4    5    5    6    6    7    7
+    ....5....0....5....0....5....0....5....0....5....0....5....0....5....0....5
+      1   2.00000    0.69315E+00   0.69315E+000    6.93147E-01  693.14718E-03
+      2   1.80000    0.58779E+00   0.58779E+000    5.87787E-01  587.78661E-03
+      3   1.60000    0.47000E+00   0.47000E+000    4.70004E-01  470.00358E-03
+      4   1.40000    0.33647E+00   0.33647E+000    3.36472E-01  336.47212E-03
+
+      6   1.00000   -0.17881E-06  -0.17881E-006   -1.78814E-07 -178.81395E-09
+      7   0.80000   -0.22314E+00  -0.22314E+000   -2.23144E-01 -223.14376E-03
+
+      9   0.40000   -0.91629E+00  -0.91629E+000   -9.16291E-01 -916.29112E-03
+     10   0.20000   -0.16094E+01  -0.16094E+001   -1.60944E+00   -1.60944E+00
+</tio:numdiff>
+
+variables
+
+As with most programs, R can do simple computations:
+
+> 3 + 8
+[1] 11
+
+(The character > is found at the beginning of every R input line and is not typed but provided automatically in R. This will become clear after working briefly in R.) Other typical calculator-like operations may also be carried out in R. To assign a variable in R, use the assignment operator, <-
+
+> x <- 5
+> x
+[1] 5
+
+= (the equals sign) may be used in place of <- in recent versions of R. Variables may be used together:
+
+> x <- 4
+> y <- 3
+> x^y
+[1] 64
+
+Variables can also be overwritten, as was done above with x. This is just the beginning. Variables may be used to hold all types of objects in R and they come in handy to make R code easier to follow.
+
+top
+vectors
+
+The most basic vectors are numbers. The variables x and y above are vectors of length 1. Look back at the output above. There is a [1]. That means that the first element shown on that line is the first element of x. A bracketed number will be displayed on each line of the output from a vector and symbolizes the vector position. Vectors of length greater than 1 may be created by
+
+> c(1, 5, 4)
+[1] 1 5 4
+> x <- c(1, 5, 4) # vectors may be assigned to a variable
+> x
+[1] 1 5 4
+
+The length of a vector is only limited by the memory on the computer (although it does take more time to handle longer vectors). Using x above, different parts of x may be looked at separately:
+
+> x[2]
+[1] 5
+
+Above, the second element of x was called and printed. Using a vector inside the brackets, more than one element of a vector may be called:
+
+> x[c(2,3)]
+[1] 5 4
+<tio:expectmatch expr="(keyword 'TRUE') | (keyword 'FALSE')"
+Vectors are not limited to being just a set of numbers. They may be contain TRUE/FALSE values or character strings:
+
+> c(TRUE, TRUE, TRUE, FALSE)
+[1] TRUE TRUE TRUE FALSE
+> c("these", "are", "each", "character", "strings", "in",
++ "this", "vector")
+[1] "these"     "are"       "each"      "character" "strings"   "in"
+[7] "this"      "vector"
+
+However, only one type of entry may be used for vectors (for example, if a vector contains both numbers and character strings, then the numbers will be treated like they are character strings.
+</tio:expectmatch>
+There are several ways to call elements of a vector. One of the more useful options is to use a vector that is of the same length but only contains the values TRUE and FALSE:
+<tio:expectmatch expr="(keyword 'TRUE')"
+> x[c(FALSE, TRUE, TRUE)]
+[1] 5 4
+</tio:expectmatch>
+Only the elements that correspond to a TRUE value are returned. A TRUE/FALSE vector is
+
+<?php
+
+use League\Csv\Reader;
+
+//We are going to insert some data into the users table
+$sth = $dbh->prepare(
+    "INSERT INTO users (firstname, lastname, email) VALUES (:firstname, :lastname, :email)"
+);
+
+<tio:multiline>
+<tio:expectmatch expr="'SOMEKEYWORD'">
+validate your data before inserting it in your database validate your data before inserting it in your data SOMEKEY
+WORD base
+</tio:expectmatch>
+</tio:multiline>
+
+$csv = Reader::createFromPath('/path/to/your/csv/file.csv');
+$csv->setOffset(1); //because we don't want to insert the header
+$nbInsert = $csv->each(function ($row) use (&$sth) {
+    //Do not forget to validate your data before inserting it in your database
+    $sth->bindValue(':firstname', $row[0], PDO::PARAM_STR);
+    $sth->bindValue(':lastname', $row[1], PDO::PARAM_STR);
+    $sth->bindValue(':email', $row[2], PDO::PARAM_STR);
+
+    return $sth->execute(); //if the function return false then the iteration will stop
+});
+<tio:multiline>
+Maximilian Roos The best solution would be to create Python stub files for Pandas as described in PE
+P 0484. See https://github.com/python/typeshed for the common repository of stubs for the stdlib and third-party libr
+aries. Note that while PyCharm is able to parse *.pyi files, the current version 5.0 comes with another stubs collection in a custom legacy format, see https://github
+.com/JetBrains/python-skeletons.
+</tio:multiline>
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxef
+a
+af
+af
+aebgedthj
+srjhaier
+jga
+wepijgaeprij h
+pgijaer
+g iaejrg
+piaer jgouaerhgaiweufhg aeiruhgaeiurg haeiug hregiuhwef ihsfngb oäaiwJFHG4Ü
+W #GPQIERJG OERWI GERWÜOGHEROGÜIW EGÜOWPOIW GOUEH oi soguhagoweh
+wf ouw h35zh wefiuh üoi3qj RPIH JSEDOUSHG ASOFI
+WE GWROG IHWROGUH Wgüouw hwüoeu ghaei ghwegöiusrh foaeh äawleghr
+#fſ
+<tio:multiline>
+<tio:lclsubst    expr="
+(charwise (int >0)'GF') => 'NUMBER-5'">
+<tio:expectmatch expr="'NUMBER-5'">
+ #jhwEOUGHEAPFIGHJTRS#J AFÄIHGJSADÄJ GNW#öh kjeö#fjrtökj43ljtgns<ädpbjw#Ö JRT
+ GAE #HIEJRFÄOSRNHGS'öfD JEA#RPRNQ4öthlKSD
+ ÜKN
+ AW#OJGH #RPIJFAÄRTPIJHA
+ SEÜPGBKGH#PNO-6GFJWEÄLJHRS#ÜVOYKDGF#ÖHKNW3ä isjhg#äÖWLEMH #SROGJFÄEORIgskga
+ ej#wpeighs#pd rifjQ
+ TREZÄNLJHAFOÄAIERNTHJ#käöj,ydsylich a#trühkw
+ reüogjfs#fäh.,stzäjoh asp#gojwr
+ oawjef
+ aoejt e57
+ +pukwe#pdifhaet#rphjl,ujhkaewfpäijaet h
+ +tzl h
+ aüerofi
+ WÄLRHMGFÄOEWUHN8äöt&r,ZG<SÖLOVUZWQ3Öo4GFiljmdguj
+</tio:expectmatch>
+</tio:lclsubst>
+</tio:multiline>
+
+Das ist ein Test
+
