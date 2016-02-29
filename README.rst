@@ -31,7 +31,10 @@ For each range, another method can be used to compare it to the reference state.
 Examples of modes
 -----------------
 
-numdiff ===
+numdiff
++++++++
+
+::
 
     <tio:numdiff expr="
     (skip 2 lines)
